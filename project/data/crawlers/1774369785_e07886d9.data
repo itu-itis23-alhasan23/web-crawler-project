@@ -1,0 +1,30 @@
+{
+  "crawler_id": "1774369785_e07886d9",
+  "origin_url": "https://example.com",
+  "max_depth": 0,
+  "status": "finished",
+  "created_at": 1774369785,
+  "started_at": 1774369785,
+  "ended_at": 1774369786,
+  "pages_per_second": 1,
+  "queue_capacity": 10,
+  "processed_count": 1,
+  "queued_count": 0,
+  "visited_count": 1,
+  "current_url": "https://example.com",
+  "current_depth": 0,
+  "throttle_active": false,
+  "restrict_to_origin_domain": true,
+  "origin_domain": "example.com",
+  "stop_requested": false,
+  "queue": [],
+  "logs": [
+    "[INFO] crawler started from https://example.com",
+    "[INFO] origin domain = example.com",
+    "[INFO] restrict_to_origin_domain = True",
+    "[INFO] visiting https://example.com at depth 0",
+    "[INFO] indexed 16 unique words and found 1 links in https://example.com",
+    "[INFO] crawler finished successfully"
+  ],
+  "error": null
+}

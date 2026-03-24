@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Crawler Status{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>Crawler Status</h2>
+
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% elif crawler %}
+        <div id="crawler-status">
+            <p><strong>Crawler ID:</strong> <span id="crawler_id">{{ crawler.crawler_id }}</span></p>
+            <p><strong>Origin URL:</strong> <span id="origin_url">{{ crawler.origin_url }}</span></p>
+            <p><strong>Origin Domain:</strong> <span id="origin_domain">{{ crawler.origin_domain }}</span></p>
+            <p><strong>Status:</strong> <span id="status">{{ crawler.status }}</span></p>
+            <p><strong>Current URL:</strong> <span id="current_url">{{ crawler.current_url }}</span></p>
+            <p><strong>Current Depth:</strong> <span id="current_depth">{{ crawler.current_depth }}</span></p>
+            <p><strong>Processed Count:</strong> <span id="processed_count">{{ crawler.processed_count }}</span></p>
+            <p><strong>Queued Count:</strong> <span id="queued_count">{{ crawler.queued_count }}</span></p>
+            <p><strong>Visited Count:</strong> <span id="visited_count">{{ crawler.visited_count }}</span></p>
+            <p><strong>Throttle Active:</strong> <span id="throttle_active">{% if crawler.throttle_active %}YES{% else %}NO{% endif %}</span></p>
+            <p><strong>Domain Restricted:</strong> <span id="restrict_to_origin_domain">{% if crawler.restrict_to_origin_domain %}YES{% else %}NO{% endif %}</span></p>
+            <p><strong>Stop Requested:</strong> <span id="stop_requested">{% if crawler.stop_requested %}YES{% else %}NO{% endif %}</span></p>
+            <p><strong>Created At:</strong> <span id="created_at">{{ crawler.created_at }}</span></p>
+            <p><strong>Started At:</strong> <span id="started_at">{{ crawler.started_at }}</span></p>
+            <p><strong>Ended At:</strong> <span id="ended_at">{{ crawler.ended_at }}</span></p>
+            <p><strong>Last Refresh:</strong> <span id="last_refresh">initial load</span></p>
+
+            <div style="margin: 16px 0;">
+                <button id="stopButton" onclick="stopCrawler()">Stop Crawler</button>
+                <span id="stopMessage" style="margin-left: 12px;"></span>
+            </div>
+
+            <p>
+                <a href="{{ url_for('export_crawler_logs', crawler_id=crawler.crawler_id) }}">Export logs as TXT</a>
+            </p>
+
+            <h3>Queue Preview</h3>
+            <div id="queue_preview" class="log-box">
+                {% if crawler.queue %}
+                    {% for item in crawler.queue[:10] %}
+                        <div>{{ item.url }} | depth={{ item.depth }}</div>
+                    {% endfor %}
+                {% else %}
+                    <div>Queue is empty.</div>
+                {% endif %}
+            </div>
+
+            <h3>Logs</h3>
+            <div id="logs" class="log-box">
+                {% for log in crawler.logs %}
+                    <div>{{ log }}</div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <script>
+            const crawlerId = "{{ crawler.crawler_id }}";
+
+            async function stopCrawler() {
+                const button = document.getElementById("stopButton");
+                const message = document.getElementById("stopMessage");
+
+                button.disabled = true;
+                message.textContent = "Sending stop request...";
+
+                try {
+                    const response = await fetch(`/crawler/${crawlerId}/stop`, {
+                        method: "POST"
+                    });
+
+                    const data = await response.json();
+
+                    if (data.ok) {
+                        message.textContent = "Stop request sent.";
+                    } else {
+                        message.textContent = data.error || "Failed to stop crawler.";
+                        button.disabled = false;
+                    }
+                } catch (err) {
+                    message.textContent = "Error sending stop request.";
+                    button.disabled = false;
+                }
+            }
+
+            async function refreshStatus() {
+                try {
+                    const response = await fetch(`/crawler/${crawlerId}/poll`);
+                    if (!response.ok) return;
+
+                    const data = await response.json();
+
+                    document.getElementById("status").textContent = data.status ?? "";
+                    document.getElementById("origin_domain").textContent = data.origin_domain ?? "";
+                    document.getElementById("current_url").textContent = data.current_url ?? "";
+                    document.getElementById("current_depth").textContent = data.current_depth ?? "";
+                    document.getElementById("processed_count").textContent = data.processed_count ?? 0;
+                    document.getElementById("queued_count").textContent = data.queued_count ?? 0;
+                    document.getElementById("visited_count").textContent = data.visited_count ?? 0;
+                    document.getElementById("throttle_active").textContent = data.throttle_active ? "YES" : "NO";
+                    document.getElementById("restrict_to_origin_domain").textContent = data.restrict_to_origin_domain ? "YES" : "NO";
+                    document.getElementById("stop_requested").textContent = data.stop_requested ? "YES" : "NO";
+                    document.getElementById("created_at").textContent = data.created_at ?? "";
+                    document.getElementById("started_at").textContent = data.started_at ?? "";
+                    document.getElementById("ended_at").textContent = data.ended_at ?? "";
+                    document.getElementById("last_refresh").textContent = new Date().toLocaleTimeString();
+
+                    const stopButton = document.getElementById("stopButton");
+                    if (["finished", "failed", "stopped"].includes(data.status)) {
+                        stopButton.disabled = true;
+                    }
+
+                    const queuePreview = document.getElementById("queue_preview");
+                    queuePreview.innerHTML = "";
+                    const queue = data.queue || [];
+                    if (queue.length === 0) {
+                        const line = document.createElement("div");
+                        line.textContent = "Queue is empty.";
+                        queuePreview.appendChild(line);
+                    } else {
+                        for (const item of queue.slice(0, 10)) {
+                            const line = document.createElement("div");
+                            line.textContent = `${item.url} | depth=${item.depth}`;
+                            queuePreview.appendChild(line);
+                        }
+                    }
+
+                    const logsDiv = document.getElementById("logs");
+                    logsDiv.innerHTML = "";
+                    for (const log of (data.logs || [])) {
+                        const line = document.createElement("div");
+                        line.textContent = log;
+                        logsDiv.appendChild(line);
+                    }
+                } catch (err) {
+                    console.error("Polling error:", err);
+                }
+            }
+
+            setInterval(refreshStatus, 2000);
+        </script>
+    {% endif %}
+</section>
+{% endblock %}

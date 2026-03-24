@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>Search Indexed Words</h2>
+
+    <form method="get" class="form-grid">
+        <label>
+            Query
+            <input type="text" name="q" value="{{ query }}" placeholder="Type a word">
+        </label>
+
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<section class="card">
+    <h2>Results</h2>
+
+    {% if query and results %}
+        <p>Showing results for: <strong>{{ query }}</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>URL</th>
+                    <th>Origin URL</th>
+                    <th>Depth</th>
+                    <th>Frequency</th>
+                    <th>Relevance Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in results %}
+                    <tr>
+                        <td><a href="{{ row.url }}" target="_blank">{{ row.url }}</a></td>
+                        <td><a href="{{ row.origin_url }}" target="_blank">{{ row.origin_url }}</a></td>
+                        <td>{{ row.depth }}</td>
+                        <td>{{ row.frequency }}</td>
+                        <td>{{ row.relevance_score }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% elif query %}
+        <p>No results found for "<strong>{{ query }}</strong>".</p>
+    {% else %}
+        <p>Enter a query to search.</p>
+    {% endif %}
+</section>
+{% endblock %}

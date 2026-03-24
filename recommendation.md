@@ -1,0 +1,5 @@
+# Recommendation for Production Next Steps
+
+For production deployment, the first priority would be replacing the current filesystem-based storage with a more scalable persistence and indexing strategy. A database-backed or search-engine-backed architecture would reduce contention from frequent file reads and writes, improve query performance, and make it easier to support larger crawls with better observability. The visited-URL tracking and indexed content storage would especially benefit from a structure optimized for fast lookups and concurrent access.
+
+The second priority would be strengthening operational robustness and crawl quality. This includes handling robots.txt policies, improving URL canonicalization, adding retry policies and rate-limiting strategies per domain, and introducing better monitoring for crawl throughput, queue growth, and failure modes. These changes would make the crawler safer, more scalable, and more suitable for production workloads while preserving the modular structure of the prototype.

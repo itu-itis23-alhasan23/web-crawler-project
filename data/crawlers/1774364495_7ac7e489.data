@@ -1,0 +1,608 @@
+{
+  "crawler_id": "1774364495_7ac7e489",
+  "origin_url": "https://en.wikipedia.org/wiki/Mathematician",
+  "max_depth": 3,
+  "status": "stopped",
+  "created_at": 1774364495,
+  "started_at": 1774364495,
+  "ended_at": 1774364536,
+  "pages_per_second": 20,
+  "queue_capacity": 100,
+  "processed_count": 15,
+  "queued_count": 99,
+  "visited_count": 15,
+  "current_url": "https://en.wikipedia.org/wiki/Euclid",
+  "current_depth": 1,
+  "throttle_active": false,
+  "restrict_to_origin_domain": true,
+  "origin_domain": "en.wikipedia.org",
+  "stop_requested": true,
+  "queue": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Calipers",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Academy",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Analytical_skill",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Critical_thinking",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Doctoral_degree",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Actuary",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/History_of_mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lists_of_mathematics_topics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Areas_of_mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Number_theory",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Geometry",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Algebra",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Calculus",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_analysis",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Discrete_mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_logic",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Probability",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Statistics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Decision_theory",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_physics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_chemistry",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Geomathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Computational_mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_and_theoretical_biology",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_linguistics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_economics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Philosophy_of_mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematics_education",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/File:Nuvola_apps_edu_mathematics_blue-p.svg",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Portal:Mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Template:Math_topics_sidebar",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Template_talk:Math_topics_sidebar",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Special:EditPage/Template:Math_topics_sidebar",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_problem",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Quantity",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_structure",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Space",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mathematical_model",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Thales_of_Miletus",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Thales%27s_theorem",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pythagoras_of_Samos",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Archimedes",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pi",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Apollonius_of_Perga",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Euclid%27s_Elements",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Conics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hypatia",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Al-Khawarizmi",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Wikipedia:Citation_needed",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Optics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Astronomy",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ibn_al-Haytham",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryabhata",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Trigonometry",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Brahmagupta",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Negative_number",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zero",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bh%C4%81skara_II",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Madhava_of_Sangamagrama",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kerala_school_of_astronomy_and_mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Medieval_India",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Series_(mathematics)",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Renaissance",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Luca_Pacioli",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Fontana_Tartaglia",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gerolamo_Cardano",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Robert_Recorde",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Vi%C3%A8te",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Oxford_University",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Robert_Hooke",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Robert_Boyle",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/University_of_Cambridge",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lucasian_Professor_of_Mathematics",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Prussia",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Frederick_William_III_of_Prussia",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Friedrich_Schleiermacher",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Autonomy",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Age_of_Enlightenment",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Seminars",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Laboratories",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/University_of_Berlin",
+      "depth": 1,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/enwiki/w/index.php?title=Special:CreateAccount&returnto=Mathematician&centralauthLoginToken=faaa9b2701be8e2ae9147d761d5fd567&usesul3=1&useformat=desktop",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/enwiki/w/index.php?title=Special:CreateAccount&returnto=Mathematician&centralauthLoginToken=3e62503fddd207bea916f290e13c947c&usesul3=1&useformat=desktop",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Talk%3AMathematician",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician&returntoquery=action%3Dedit",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician&returntoquery=action%3Dhistory",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Special%3AWhatLinksHere%2FMathematician",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Special%3ARecentChangesLinked%2FMathematician",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician&returntoquery=oldid%3D1341845922",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician&returntoquery=action%3Dinfo",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Special%3ACiteThisPage&returntoquery=id%3D1341845922%26page%3DMathematician%26wpFormIdentifier%3Dtitleform",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Special%3AUrlShortener&returntoquery=url%3Dhttps%253A%252F%252Fen.wikipedia.org%252Fwiki%252FMathematician",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Special%3ADownloadAsPdf&returntoquery=action%3Dshow-download-screen%26page%3DMathematician",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician&returntoquery=printable%3Dyes",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    },
+    {
+      "url": "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=File%3AEuclid.jpg",
+      "depth": 2,
+      "origin_url": "https://en.wikipedia.org/wiki/Mathematician"
+    }
+  ],
+  "logs": [
+    "[INFO] crawler job created",
+    "[INFO] origin URL set to https://en.wikipedia.org/wiki/Mathematician",
+    "[INFO] origin domain set to en.wikipedia.org",
+    "[INFO] max depth set to 3",
+    "[INFO] pages_per_second set to 20",
+    "[INFO] queue_capacity set to 100",
+    "[INFO] restrict_to_origin_domain set to True",
+    "[INFO] crawler started from https://en.wikipedia.org/wiki/Mathematician",
+    "[INFO] origin domain = en.wikipedia.org",
+    "[INFO] restrict_to_origin_domain = True",
+    "[INFO] visiting https://en.wikipedia.org/wiki/Mathematician at depth 0",
+    "[INFO] indexed 1477 unique words and found 461 links in https://en.wikipedia.org/wiki/Mathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 100 new URLs to queue from https://en.wikipedia.org/wiki/Mathematician",
+    "[INFO] filtered 106 outside-domain URLs from https://en.wikipedia.org/wiki/Mathematician",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician at depth 1",
+    "[INFO] indexed 140 unique words and found 33 links in https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Mathematician",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Mathematician at depth 1",
+    "[INFO] indexed 122 unique words and found 34 links in https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Mathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Mathematician",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Mathematician",
+    "[INFO] visiting https://en.wikipedia.org/wiki/Talk:Mathematician at depth 1",
+    "[INFO] indexed 1920 unique words and found 302 links in https://en.wikipedia.org/wiki/Talk:Mathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/wiki/Talk:Mathematician",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/wiki/Talk:Mathematician",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Mathematician&action=edit at depth 1",
+    "[INFO] indexed 1434 unique words and found 381 links in https://en.wikipedia.org/w/index.php?title=Mathematician&action=edit",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Mathematician&action=edit",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Mathematician&action=edit",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Mathematician&action=history at depth 1",
+    "[INFO] indexed 865 unique words and found 281 links in https://en.wikipedia.org/w/index.php?title=Mathematician&action=history",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Mathematician&action=history",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Mathematician&action=history",
+    "[INFO] visiting https://en.wikipedia.org/wiki/Special:WhatLinksHere/Mathematician at depth 1",
+    "[INFO] indexed 219 unique words and found 192 links in https://en.wikipedia.org/wiki/Special:WhatLinksHere/Mathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/wiki/Special:WhatLinksHere/Mathematician",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/wiki/Special:WhatLinksHere/Mathematician",
+    "[INFO] visiting https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Mathematician at depth 1",
+    "[INFO] indexed 668 unique words and found 177 links in https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Mathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Mathematician",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Mathematician",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Mathematician&oldid=1341845922 at depth 1",
+    "[INFO] indexed 1488 unique words and found 469 links in https://en.wikipedia.org/w/index.php?title=Mathematician&oldid=1341845922",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Mathematician&oldid=1341845922",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Mathematician&oldid=1341845922",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Mathematician&action=info at depth 1",
+    "[INFO] indexed 298 unique words and found 169 links in https://en.wikipedia.org/w/index.php?title=Mathematician&action=info",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Mathematician&action=info",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Mathematician&action=info",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Mathematician&id=1341845922&wpFormIdentifier=titleform at depth 1",
+    "[INFO] indexed 241 unique words and found 46 links in https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Mathematician&id=1341845922&wpFormIdentifier=titleform",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Mathematician&id=1341845922&wpFormIdentifier=titleform",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&page=Mathematician&id=1341845922&wpFormIdentifier=titleform",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMathematician at depth 1",
+    "[INFO] indexed 101 unique words and found 30 links in https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMathematician",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMathematician",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMathematician",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Mathematician&action=show-download-screen at depth 1",
+    "[INFO] indexed 78 unique words and found 30 links in https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Mathematician&action=show-download-screen",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Mathematician&action=show-download-screen",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Special:DownloadAsPdf&page=Mathematician&action=show-download-screen",
+    "[INFO] visiting https://en.wikipedia.org/w/index.php?title=Mathematician&printable=yes at depth 1",
+    "[INFO] indexed 1487 unique words and found 461 links in https://en.wikipedia.org/w/index.php?title=Mathematician&printable=yes",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/w/index.php?title=Mathematician&printable=yes",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/w/index.php?title=Mathematician&printable=yes",
+    "[INFO] visiting https://en.wikipedia.org/wiki/File:Euclid.jpg at depth 1",
+    "[INFO] indexed 446 unique words and found 129 links in https://en.wikipedia.org/wiki/File:Euclid.jpg",
+    "[INFO] queue capacity reached (100), throttling new URLs",
+    "[INFO] added 1 new URLs to queue from https://en.wikipedia.org/wiki/File:Euclid.jpg",
+    "[INFO] filtered 1 outside-domain URLs from https://en.wikipedia.org/wiki/File:Euclid.jpg",
+    "[INFO] visiting https://en.wikipedia.org/wiki/Euclid at depth 1",
+    "[INFO] indexed 2204 unique words and found 781 links in https://en.wikipedia.org/wiki/Euclid",
+    "[INFO] stop requested by user"
+  ],
+  "error": null
+}

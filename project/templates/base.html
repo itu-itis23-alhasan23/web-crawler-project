@@ -1,0 +1,37 @@
+{% set current_endpoint = request.endpoint %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Crawler Project{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-left">
+            <h1>Mini Search Engine</h1>
+            <p class="topbar-subtitle">Local crawler and search prototype</p>
+        </div>
+
+        <nav class="topnav">
+            <a
+                href="{{ url_for('crawler_page') }}"
+                class="nav-link {% if current_endpoint in ['crawler_page', 'status_page', 'poll_status', 'stop_crawler'] %}active{% endif %}">
+                Crawler
+            </a>
+
+            <a
+                href="{{ url_for('search_page') }}"
+                class="nav-link {% if current_endpoint == 'search_page' %}active{% endif %}">
+                Search
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

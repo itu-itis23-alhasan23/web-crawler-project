@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Crawler{% endblock %}
+
+{% block content %}
+<section class="card">
+    <h2>Start Crawler Job</h2>
+
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" class="form-grid">
+        <label>
+            Origin URL
+            <input type="text" name="origin_url" placeholder="https://example.com" required>
+        </label>
+
+        <label>
+            Max Depth
+            <input type="number" name="max_depth" value="1" min="0" required>
+        </label>
+
+        <label>
+            Pages / Second
+            <input type="number" name="pages_per_second" value="1" min="1" required>
+        </label>
+
+        <label>
+            Queue Capacity
+            <input type="number" name="queue_capacity" value="100" min="1" required>
+        </label>
+
+        <label style="display:flex; align-items:center; gap:10px; margin-top:8px;">
+            <input type="checkbox" name="restrict_to_origin_domain" checked>
+            Restrict crawler to the origin domain
+        </label>
+
+        <button type="submit">Create Crawler Job</button>
+    </form>
+    <p style="margin-top:12px;">
+        API available:
+        <code>POST /api/index</code>
+        and
+        <code>GET /api/search?query=...</code>
+    </p>
+</section>
+
+<section class="card">
+    <h2>Previous Jobs</h2>
+
+    {% if jobs %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Crawler ID</th>
+                    <th>Origin URL</th>
+                    <th>Status</th>
+                    <th>Processed</th>
+                    <th>Queued</th>
+                    <th>Throttle</th>
+                    <th>Domain Restricted</th>
+                    <th>Open</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for job in jobs %}
+                    <tr>
+                        <td>{{ job.crawler_id }}</td>
+                        <td>{{ job.origin_url }}</td>
+                        <td>{{ job.status }}</td>
+                        <td>{{ job.processed_count }}</td>
+                        <td>{{ job.queued_count }}</td>
+                        <td>{% if job.throttle_active %}ON{% else %}OFF{% endif %}</td>
+                        <td>{% if job.restrict_to_origin_domain %}YES{% else %}NO{% endif %}</td>
+                        <td>
+                            <a href="{{ url_for('status_page', crawler_id=job.crawler_id) }}">Status Page</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No crawler jobs yet.</p>
+    {% endif %}
+</section>
+{% endblock %}
